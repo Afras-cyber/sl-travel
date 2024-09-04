@@ -1,7 +1,20 @@
-import Image from "next/image";
+import React from 'react'
+import Navbar from './components/Navbar';
+import Cards1 from './components/Cards1';
+import Gallery from './components/Gallery';
+import Cards2 from './components/Cards2';
 
-export default function Home() {
+
+
+const page = () => {
   return (
-    <h1>hello world -rahna</h1>
-  );
+    <div>
+      <Navbar/>
+      <Cards1/>
+      <Gallery/>
+      <Cards2/>
+    </div>
+  )
 }
+
+export default page
