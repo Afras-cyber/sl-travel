@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; 
 
 const cardOne = [
   {
@@ -24,7 +25,7 @@ const Cards1 = () => {
             key={index} 
             className='bg-white rounded-lg shadow-md overflow-hidden cursor-pointer max-w-xs w-full'
           >
-            <img 
+            <Image
               src={features.image} 
               alt="" 
               className='w-full h-72 object-cover'
