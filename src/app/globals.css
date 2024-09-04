@@ -2,3 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@layer base{
+    body{
+        @apply font-[Poppins]
+    }
+    li{
+        @apply p-4 
+    }
+
+    h1{
+        @apply text-3xl md:text-4xl font-bold
+    }
+
+    h2{
+        @apply text-3xl font-bold
+    }
+
+    h3{
+        @apply text-xl font-bold
+    }
+}
+
+.bg-navyblue {
+    background-color: #001f3f; /* Navy blue */
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .hover\:bg-skyblue:hover {
+    background-color: #87ceeb; 
+  }
+  
+  .transition-colors {
+    transition: background-color 0.3s ease;
+  }
+
+  
+.top-navbar {
+    position: relative; 
+    z-index: 20; 
+  }
+  
+  .main-navbar {
+    position: relative; 
+    z-index: 10; 
+  }
+  
+  .mobile-menu {
+    z-index: 30; 
+  }
+  
+
+  .bg-navyblue {
+    background-color: #001f3f; 
+    z-index: 20; 
+  }
+  
