@@ -29,11 +29,11 @@ const Navbar = () => {
 
         <ul className='hidden md:flex'>
           <li>What&apos;s New</li>
-          <li>What to do</li>
-          <li>Where to go</li>
-          <li>Plan your Trip</li>
+          <li>What to Do</li>
+          <li>Where to Go</li>
+          <li>Plan Your Trip</li>
           <li>Upcoming Events</li>
-          <li>What the world has to say</li>
+          <li>What the World has to Say</li>
         </ul>
 
         <div className='hidden md:flex'>
@@ -50,24 +50,24 @@ const Navbar = () => {
           <ul>
             <h1>Srilanka</h1>
             <li className='border-b text-center'>What&apos;s New</li>
-            <li className='border-b text-center'>What to do</li>
-            <li className='border-b text-center'>Where to go</li>
+            <li className='border-b text-center'>What to Do</li>
+            <li className='border-b text-center'>Where to Go</li>
             <li className='border-b text-center'>Plan your Trip</li>
             <li className='border-b text-center'>Upcoming Events</li>
-            <li className='border-b text-center'>What the world has to say</li>
+            <li className='border-b text-center'>What the world has to Say</li>
           </ul>
         </div>
       </div>
 
       {/* Hero Section */}
       <div className="hero-section relative w-full h-[500px]">
-        <Image
-          src="/assets/hero.jpg"
-          alt="Hero Background"
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
-        />
+      <Image
+         src="/assets/hero.jpg"
+         alt="Hero Background"
+         fill
+        style={{ objectFit: 'cover' }}  // Use inline style to set objectFit
+        className="w-full h-full"  // Ensure the image covers the container
+  />
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white bg-black/40">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">AN ISLAND ESCAPE</h1>
           <p className="text-4xl md:text-6xl font-bold mb-4">AWAITS YOU</p>
@@ -93,7 +93,6 @@ const Navbar = () => {
         <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
           Savour the unique experiences this island treasure has to offer.
         </p>
-        <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg">Learn More</button>
       </div>
     </>
   );

@@ -45,14 +45,18 @@ const Cards2 = () => {
   return (
     <div className='py-12 bg-white-100'>
     
-      <div className="flex flex-col justify-center items-start w-full px-6 md:px-12 py-8 bg-white">
+      <div className="flex flex-col justify-between items-start w-full px-6 md:px-12 py-8 bg-white">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Plan Your Dream Holiday</h1>
         <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-2">
-        Each day on this island promises new experiences, discoveries, and life-long memories. With so much to do,let us help you with these itineraries created just for you!
+            Each day on this island promises new experiences, discoveries,<br />
+            and life-long memories. With so much to do, let us help you with<br /> 
+            these itineraries created just for you!
         </p>
-          <button className="px-4 py-2 bg-teal-500 text-white text-lg rounded-lg">
-            View All
-          </button>
+
+        <button className="px-4 py-2 border-2 border-teal-500 text-teal-500 text-lg rounded-xl hover:bg-teal-500 hover:text-white transition duration-300">
+         VIEW ALL
+       </button>
+
       </div>
 
     
@@ -65,6 +69,8 @@ const Cards2 = () => {
             <Image
               src={features.image} 
               alt="" 
+              width={400} 
+              height={200}
               className='w-full h-72 object-cover'
             />
             <div className='p-4 text-center'>

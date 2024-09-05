@@ -21,7 +21,7 @@ const TopNavbar = () => {
           About Us
         </li>
         <li className='hover:bg-skyblue transition-colors'>
-          Tourism Hostline 1912
+          Tourism Hotline 1912
         </li>
         <li className='hover:bg-skyblue transition-colors'>
           Select Language
