@@ -28,6 +28,8 @@ const Cards1 = () => {
             <Image
               src={features.image} 
               alt="" 
+              width={500} 
+              height={300}
               className='w-full h-72 object-cover'
             />
             <div className='p-4 text-center'>
